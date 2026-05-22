@@ -1,0 +1,22 @@
+{
+  "manifest_version": 3,
+  "name": "Hover IP",
+  "version": "1.0",
+  "description": "Hover over the globe icon to see your external IP address.",
+  "permissions": [
+    "alarms"
+  ],
+  "host_permissions": [
+    "https://api.ipify.org/*"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_icon": "icon.png",
+    "default_title": "Fetching IP..."
+  },
+  "icons": {
+    "128": "icon.png"
+  }
+}
